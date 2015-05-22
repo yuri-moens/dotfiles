@@ -1,2 +1,2 @@
 # dotfiles
-Varios configuration files for (Arch) Linux
+Various configuration files for (Arch) Linux
