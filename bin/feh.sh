@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# $HOME/bin/feh.sh
+#
+# feh wrapper
 
 shopt -s nullglob
 

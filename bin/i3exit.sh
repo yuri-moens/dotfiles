@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# $HOME/bin/i3exit.sh
+#
+# Handle the system state menu.
+
 lock() {
     i3lock -c 000000
 }

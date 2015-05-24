@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $HOME/bin/pacvol.sh
+#
 # PulseAudio Volume Control Script
 #   2010-05-20 - Gary Hetzel <garyhetzel@gmail.com>
 #
