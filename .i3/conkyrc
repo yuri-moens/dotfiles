@@ -1,0 +1,28 @@
+# $HOME/.i3/conkyrc
+#
+# Requires conky, deadbeef, font-awesome and bin/pacvol.sh
+# Arch packages: conky, deadbeef, ttf-font-awesome (AUR)
+
+background	no
+out_to_console	yes
+out_to_x	no
+update_interval	2
+total_run_times	0
+short_units	yes
+pad_percents	3
+
+override_utf8_locale	yes
+if_up_strictness	address
+
+TEXT
+[{"full_text": " ${exec deadbeef --nowplaying "%a - %t"}","color":"\#9C9C9C"},
+  {"full_text": " ${exec $HOME/pacvol.sh display}", "color": "\#9C9C9C", "name": "volume"},
+  {"full_text": "  $acpitemp°C [$cpu%] ", "color": "\#9C9C9C"},
+  {"full_text": "  [$membar] ", "color":"\#9C9C9C"},
+  ${if_up wlp3s0}{"full_text": "  ${wireless_essid wlp3s0} [${wireless_link_qual_perc 
+wlp3s0}%] ${addr wlp3s0} ","color":"\#9C9C9C"},
+  $else${if_up enp2s0}{"full_text": "  enp2s0 ${addr enp2s0} ","color":"\#9C9C9C"},
+  $else{"full_text": " ≈ no connection ","color":"\#9C9C9C"},$endif$endif
+  {"full_text": "  [${exec cat /sys/class/power_supply/BAT1/capacity}%] ","color":"\#9C9C9C"},
+  {"full_text": "  ${time %a %d %b} ${time %H:%M} ", "color":"\#9C9C9C"}
+],
