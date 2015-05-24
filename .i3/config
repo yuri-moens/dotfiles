@@ -188,4 +188,4 @@ bar {
 	}
 }
 
-bindsym Control+grave exec deur
+bindsym Control+grave exec $HOME/bin/deur.sh
