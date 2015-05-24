@@ -1,3 +1,8 @@
+# $HOME/.zshrc
+#
+# Requires zsh and oh-my-zsh
+# Arch packages: zsh, oh-my-zsh-git (AUR)
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
