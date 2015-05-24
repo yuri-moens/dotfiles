@@ -7,7 +7,7 @@
 directory=$HOME/pictures/screens/
 
 if [ ! -d "$directory" ]; then
-  mkdir $directory
+  mkdir -p $directory
 fi
 
 case "$1" in
