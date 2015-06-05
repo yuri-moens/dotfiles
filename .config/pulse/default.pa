@@ -1,6 +1,6 @@
 #!/usr/bin/pulseaudio -nF
 #
-# $HOME/.config/pulse/
+# $HOME/.config/pulse/default.pa
 #
 # This file is part of PulseAudio.
 #
