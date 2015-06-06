@@ -3,8 +3,7 @@ Description=Random wallpaper with feh
 
 [Service]
 Type=oneshot
-EnvironmentFile=%h/pictures/wallpapers
-ExecStart=/bin/bash -c '/usr/bin/feh --bg-max "$(find ${WALLPATH}|shuf|head -n 1)"'
+ExecStart=/bin/bash -c '/usr/bin/feh --bg-max "$(find %h/pictures/wallpapers|shuf|head -n 1)"'
 
 [Install]
 WantedBy=default.target

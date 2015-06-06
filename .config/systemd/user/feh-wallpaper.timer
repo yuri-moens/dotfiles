@@ -2,7 +2,8 @@
 Description=Random wallpaper with feh
 
 [Timer]
-OnUnitActiveSec=600
+OnBootSec=5m
+OnUnitActiveSec=10m
 Unit=feh-wallpaper.service
 
 [Install]
