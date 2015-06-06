@@ -1,6 +1,6 @@
 # $HOME/.i3/conkyrc
 #
-# Requires conky, deadbeef, font-awesome and bin/pacvol.sh
+# Requires conky, deadbeef, font-awesome, bin/pacvol.sh and pacman-sync service/timer
 # Arch packages: conky, deadbeef, ttf-font-awesome (AUR)
 
 background	no
@@ -17,6 +17,7 @@ if_up_strictness	address
 TEXT
 [{"full_text": " ${exec deadbeef --nowplaying "%a - %t"}","color":"\#9C9C9C"},
   {"full_text": " ${exec $HOME/pacvol.sh display}", "color": "\#9C9C9C", "name": "volume"},
+  {"full_text": "  [${exec pacman -Qu | wc -l}] ", "color":"\#9C9C9C"},
   {"full_text": "  $acpitemp°C [$cpu%] ", "color": "\#9C9C9C"},
   {"full_text": "  [$membar] ", "color":"\#9C9C9C"},
   ${if_up wlp3s0}{"full_text": "  ${wireless_essid wlp3s0} [${wireless_link_qual_perc 

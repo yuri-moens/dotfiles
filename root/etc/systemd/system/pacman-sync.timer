@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync pacman repositories
+
+[Timer]
+OnBootSec=3m
+OnUnitActiveSec=1h
+Unit=pacman-sync.service
+
+[Install]
+WantedBy=default.target
