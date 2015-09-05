@@ -188,4 +188,3 @@ bar {
 	}
 }
 
-bindsym Control+grave exec $HOME/bin/door.sh
