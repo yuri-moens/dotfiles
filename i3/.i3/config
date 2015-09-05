@@ -33,7 +33,6 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-# bindsym $mod+Shift+q kill
 bindsym Mod1+F4 kill
 
 # start j4-dmenu, install package j4-dmenu-desktop-git
@@ -50,6 +49,10 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# move workspace
+bindsym $mod+Ctrl+Shift+Right move workspace to output right
+bindsym $mod+Ctrl+Shift+Left move workspace to output left
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -101,11 +104,6 @@ bindsym $mod+9 workspace $WS9
 bindsym $mod+0 workspace 10
 
 workspace $WS1 output VGA-0
-
-# rofi switcher keybind
-bindsym Mod1+Tab exec rofi -now -ssh-command "terminator -x {ssh-client} {host}" -font "terminus 8" -fg "#10a0a0" -bg "#303030" -hlfg "#303030"  -hlbg "#10a0a0"
-# rofi run keybind
-bindsym $mod+x exec rofi -now -show run -ssh-command "terminator -x {ssh-client} {host}" -font "terminus 8" -fg "#10a0a0" -bg "#303030" -hlfg "#303030"  -hlbg "#10a0a0"
 
 # switch between next and previous workspace
 #bindsym Mod1+Tab workspace next
@@ -178,7 +176,7 @@ bindsym $mod+Print exec $HOME/bin/screen.sh active
 # finds out, if available)
 bar {
 	position top
-        status_command ~/.i3/conky
+  status_command ~/.i3/conky
 	tray_output LVDS
 	colors {
 		statusline #AAAAAA
