@@ -1,3 +1,0 @@
-feh --bg-fill $HOME/pictures/shingeki-no-kyojin-1920x1080.jpg
-xrandr --output VGA-0 --auto --left-of LVDS-0
-xbindkeys

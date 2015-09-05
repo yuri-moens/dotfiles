@@ -1,9 +1,32 @@
 # dotfiles
+
 Various configuration files for (Arch) Linux
 
-Remember to check the permissions of the system-wide configuration files (in the *root* directory) and to enable the timers you'd like to use.
+# Managing
 
-Current list of available timers:
+The dotfiles are organized to work with GNU Stow. Make sure to install this for easy dotfile management.
 
-* pacman-sync.timer
-* feh-wallpaper.timer (--user)
+`sudo pacman -S stow`
+
+## Clone the repo
+
+`cd`
+
+`git clone git@github.com:yuri-moens/dotfiles.git`
+
+`cd dotfiles`
+
+## Installing user configuration files
+
+`stow zsh`
+
+This will symlink the .zshrc file to `~/.zshrc`.
+
+## Installing root configuration files
+
+`sudo stow -t / pacman`
+
+This will symlink the pacman.conf file to `/etc/pacman.conf`.
+
+Make sure the file doesn't already exist or a symlink cannot be made.
+
