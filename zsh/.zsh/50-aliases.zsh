@@ -1,0 +1,30 @@
+alias update='pacaur -Syu'
+alias install='pacaur -S'
+alias remove='pacaur -Rsn'
+
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit -m'
+alias gp='git push'
+alias pull='git pull'
+alias gs='git status'
+
+alias dhcp='sudo netctl switch-to dhcp'
+alias mountnas='sudo mount -t nfs4 192.168.0.100:/volume1/public /home/ymo/nas/public'
+alias mountnasprivate='sudo mount -t nfs4 192.168.0.100:/volume1/private /home/ymo/nas/private'
+alias tunnel='ssh -D 1080 do'
+
+alias vi='vim'
+alias svim='sudo vim'
+alias svi='sudo vim'
+alias snano='sudo nano'
+
+alias lss='ls -lash'
+alias lsl='ls -lh'
+alias rscp='rsync -aP'
+alias rsmv='rsync -aP --remove-source-files'
+alias cp='cp -r'
+alias scp='scp -r'
+alias mkdir='mkdir -p'
+
+alias ffs='sudo $(fc -ln -1)'
