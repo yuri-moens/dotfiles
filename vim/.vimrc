@@ -13,7 +13,8 @@ set encoding=utf-8
 
 set history=256                " Number of things to remember in history.
 set timeoutlen=250             " Time to wait after ESC (default causes an annoying delay)
-set clipboard+=unnamed         " Yanks go on clipboard instead.
+set clipboard=unnamed          " Yanks go on clipboard instead.
+set clipboard=unnamedplus
 set pastetoggle=<F10>          " toggle between paste and normal: for 'safer' pasting from keyboard
 set shiftround                 " round indent to multiple of 'shiftwidth'
 set tags=.git/tags;$HOME       " consider the repo tags first, then
