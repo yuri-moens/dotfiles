@@ -4,22 +4,18 @@
 #
 # Handle the system state menu.
 
-lock() {
-    i3lock -c 000000
-}
-
 case "$1" in
     lock)
-        lock
+        ~/bin/lock.sh
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        lock && systemctl suspend
+        ~/bin/lock.sh && systemctl suspend
         ;;
     hibernate)
-        lock && systemctl hibernate
+        ~/bin/lock.sh && systemctl hibernate
         ;;
     reboot)
         systemctl reboot
