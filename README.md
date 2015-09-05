@@ -30,3 +30,10 @@ This will symlink the pacman.conf file to `/etc/pacman.conf`.
 
 Make sure the file doesn't already exist or a symlink cannot be made.
 
+## Special cases
+
+Systemd configurations already exist and should not be deleted to allow symlinking a folder so if you want to install systemd-root use the following commands.
+
+`sudo stow -t /etc/systemd/ -d systemd-root user`
+
+`sudo stow -t /etc/systemd/system/ -d systemd-root system`

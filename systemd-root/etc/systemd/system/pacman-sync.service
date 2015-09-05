@@ -1,9 +1,0 @@
-[Unit]
-Description=Sync pacman repositories
-
-[Service]
-Type=oneshot
-ExecStart=/bin/pacman -Sy
-
-[Install]
-WantedBy=default.target
