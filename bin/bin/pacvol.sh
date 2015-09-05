@@ -18,7 +18,7 @@ MUTED=0
 
 MUTED=`pacmd list-sinks 0 | grep muted | cut -d ' ' -f 2`
 #VOLPERC=`pactl list sinks | awk '/Volume: 0:/ {print substr($3, 1, index($3, "%") - 1)}' | head -n1`
-VOLPERC=`pactl list sinks | awk '/Volume: front-left:/ {print substr($5, 1, index($5, "%") - 1)}'`
+VOLPERC=`pactl list sinks | awk '/Volume: front-left:/ {print substr($5, 1, index($5, "%") - 1)}' | tail -n1`
 SKIPOVERCHECK=1
 
 display(){
