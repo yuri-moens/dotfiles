@@ -36,4 +36,5 @@ Systemd configurations already exist and should not be deleted to allow symlinki
 
 `sudo stow -t /etc/systemd/ -d systemd-root user`
 
-`sudo stow -t /etc/systemd/system/ -d systemd-root system`
+The timers and services cannot be stowed because systemd cannot enable symlinked unit files. Copy them manually to `/etc/systemd/system`
+

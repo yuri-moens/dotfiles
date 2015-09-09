@@ -1,0 +1,10 @@
+[Unit]
+Description=Update hosts file.
+
+[Timer]
+OnBootSec=4m
+OnUnitActiveSec=3d
+Unit=hosts-update.service
+
+[Install]
+WantedBy=default.target
