@@ -10,7 +10,7 @@ Xft.rgba: rgb
  
 ! URxvt
  
-URxvt*font:             xft:Bitstream Vera Sans Mono:size=10
+URxvt*font:             xft:Bitstream Vera Sans Mono:size=10,xft:Inconsolata for Powerline:size=10
 URxvt*termName:         rxvt
 URxvt*foreground:       #cccccc
 URxvt.scrollstyle:      plain
