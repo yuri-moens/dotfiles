@@ -98,6 +98,8 @@ Plugin 'vim-scripts/lastpos.vim'
 Plugin 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key='<LocalLeader>'
 
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'ZoomWin'
 noremap <leader>o :ZoomWin<CR>
 vnoremap <leader>o <C-C>:ZoomWin<CR>
@@ -136,7 +138,7 @@ syntax on  " enable syntax highlighting
 set mouse=a "enable mouse in GUI mode
 set mousehide                 " Hide mouse after chars typed
 
-set number                  " line numbers On
+set number                    " line numbers On
 set showmatch                 " Show matching brackets.
 set matchtime=2               " Bracket blinking.
 
@@ -180,7 +182,7 @@ nnoremap <leader>rs :source ~/.vimrc<CR>
 nnoremap <leader>rt :tabnew ~/.vim/vimrc<CR>
 nnoremap <leader>re :e ~/.vim/vimrc<CR>
 nnoremap <leader>rd :e ~/.vim/ <CR>
-nnoremap <leader>rc :silent ! cd ~/.vim/ && git commit ~/.vim/vimrc -v <CR>
+nnoremap <leader>rc :silent ! cd ~/.vim/ t& git commit ~/.vim/vimrc -v <CR>
 
 " Tabs
 nnoremap <M-h> :tabprev<CR>
@@ -260,4 +262,7 @@ let g:lightline = {
   \ 'separator': { 'left': '', 'right': '' },
   \ 'subseparator': { 'left': '', 'right': '' }
   \ }
+
+" NerdTree configuration
+map <leader>n :NERDTreeToggle<CR>
 
