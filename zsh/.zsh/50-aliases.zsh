@@ -28,5 +28,5 @@ alias scp='scp -r'
 alias mkdir='mkdir -p'
 
 alias ffs='sudo $(fc -ln -1)'
-alias fbrename='filebot -rename --db TheTVDB --format "{n} - {s00e00} - {t}" .'
-alias fbrenameanime='filebot -rename --db AniDB --format "{n} - {s00e00} - {t}" .'
+alias fbrename='filebot -rename --db TheTVDB --format "{n} - {s00e00} - {t}" -non-strict --log-file filebot.log .'
+alias fbrenameanime='filebot -rename --db AniDB --format "{n} - {s00e00} - {t}" -non-strict --log-file filebot.log .'
