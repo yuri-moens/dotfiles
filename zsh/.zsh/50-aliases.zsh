@@ -29,3 +29,4 @@ alias mkdir='mkdir -p'
 
 alias ffs='sudo $(fc -ln -1)'
 alias fbrename='filebot -rename --db TheTVDB --format "{n} - {s00e00} - {t}" .'
+alias fbrenameanime='filebot -rename --db AniDB --format "{n} - {s00e00} - {t}" .'
