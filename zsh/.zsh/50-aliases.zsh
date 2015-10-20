@@ -13,6 +13,7 @@ alias dhcp='sudo netctl switch-to dhcp'
 alias mountnas='sudo mount -t nfs4 192.168.0.100:/volume1/public /home/ymo/nas/public'
 alias mountnasprivate='sudo mount -t nfs4 192.168.0.100:/volume1/private /home/ymo/nas/private'
 alias tunnel='ssh -D 1080 do'
+alias iswtunnel='ssh -D 1080 root@do -p 2222'
 
 alias vi='vim'
 alias svim='sudo vim'

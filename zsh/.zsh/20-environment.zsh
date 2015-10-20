@@ -1,6 +1,6 @@
 export PATH=$HOME/perl5/bin:$HOME/bin:/usr/local/bin:$PATH
 
-export TERM=rxvt-unicode-256color
+#export TERM=rxvt-unicode-256color
 export EDITOR=vim
 export VISUAL=vim
 
